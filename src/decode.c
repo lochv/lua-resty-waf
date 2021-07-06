@@ -73,7 +73,7 @@ int js_decode(unsigned char *input, long int input_len) {
 				while((i + 1 + j < input_len)&&(j < 3)) {
 					input[j] = orig_input[i + 1 + j];
 					j++;
-					if (!ISODIGIT(orig_input[i + 1 + j];)) break;
+					if (!ISODIGIT(orig_input[i + 1 + j])) break;
 				}
 				input[j] = '\0';
 
